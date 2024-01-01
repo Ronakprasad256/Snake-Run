@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EngageUp</title>
+    <link rel="stylesheet" href="EngageUp.css" />
+    <link rel="shortcut icon" href="./Image/facicon.png" type="image/x-icon" />
+    <style>
+      /* width */
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+
+      /* Track */
+      ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey;
+        /* border-radius: 10px; */
+      }
+
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: red;
+        border-radius: 5px;
+      }
+
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: url(./Image/scrool.png);
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav class="nav">
+        <nav class="navbar">
+          <img src="./Image/logo.png" alt="logo" />
+        </nav>
+        <nav class="navbar1">
+          <a href="signup.html"><button type="button">Sign up</button></a>
+        </nav>
+      </nav>
+      <hr />
+    </header>
+    <main>
+      <div class="content">
+        <div class="content1">
+          <h1 style="color: teal">EngageUp</h1>
+          <p>EngageUp helps you to connect & share your</p>
+          <p>thoughts, ideas with the world</p>
+        </div>
+        <div class="content2">
+          <input type="email" id="email" placeholder="Email or Phone number" />
+          <input type="password" id="password" placeholder="Password" />
+          <a href="Home.html"
+            ><button type="button" id="loginButton">Log in</button><br
+          /></a>
+          <hr />
+          <br />
+          <a href="forgotten.html" style="text-decoration: none"
+            ><p>Forgotten Password?</p></a
+          >
+          <div class="create">
+            <a href="signup.html"
+              ><button type="button" class="create">
+                <span>Create new account</span>
+              </button></a
+            >
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <h4 style="color: white">.Lite &#169; 2023</h4>
+    </footer>
+
+    <script>
+      const email = document.getElementById('email');
+      const password = document.getElementById('password');
+      const loginButton = document.getElementById('loginButton');
+
+      loginButton.addEventListener('click', function () {
+        console.log(email.value, password.value);
+      });
+    </script>
+  </body>
+</html>
